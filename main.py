@@ -23,8 +23,8 @@ engine = create_engine(
 )
 
 
-@app.get("/items")
-def get_items(api_key: APIKey = Depends(require_api_key)):
+@app.get("/loads", dependencies=[Depends(require_api_key)])
+def get_items():
     with engine.connect() as conn:
-        result = conn.execute(text("SELECT * FROM items"))
+        result = conn.execute(text("SELECT * FROM loads"))
         return [dict(row) for row in result.mappings()]
