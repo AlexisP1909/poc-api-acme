@@ -33,5 +33,5 @@ with engine.begin() as conn:
         ('Chicago, IL', 'Houston, TX', '2024-07-02 09:00', '2024-07-04 18:00', 'Refrigerated', 1800.00, 'Keep refrigerated', 15000, 'Perishables', 8, 1080, '48x96x110'),
         ('Miami, FL', 'Atlanta, GA', '2024-07-03 07:30', '2024-07-03 15:30', 'Flatbed', 1200.00, 'Secure load properly', 10000, 'Construction Materials', 5, 660, '48x102x110'),
         ('Seattle, WA', 'Denver, CO', '2024-07-04 10:00', '2024-07-06 20:00', 'Dry Van', 2200.00, 'Fragile items', 18000, 'Furniture', 12, 1300, '48x102x110'),
-        ('Boston, MA', 'Philadelphia, PA', '2024-07-05 06:00', '2024-07-05 14:00', 'Refrigerated', 900.00, 'Keep upright', 8000, 'Dairy Products', 6, 310, '48x96x110'),
+        ('Boston, MA', 'Philadelphia, PA', '2024-07-05 06:00', '2024-07-05 14:00', 'Refrigerated', 900.00, 'Keep upright', 8000, 'Dairy Products', 6, 310, '48x96x110')
     """))
