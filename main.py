@@ -23,6 +23,11 @@ engine = create_engine(
 )
 
 
+@app.get("/")
+def root():
+    return {"status": "ok"}
+
+
 @app.get("/loads", dependencies=[Depends(require_api_key)])
 def get_items():
     with engine.connect() as conn:
